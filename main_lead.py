@@ -3,6 +3,8 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 
+
+
 app = FastAPI()
 
 model = joblib.load("lead_model.pkl")
@@ -17,6 +19,9 @@ class LeadData(BaseModel):
     recency_days: int
     deal_value: float
 
+@app.get("/")
+def home():
+    return {"message": "Lead Scoring API is running 🚀"}
 
 @app.post("/score")
 def score_lead(data: LeadData):
@@ -39,4 +44,5 @@ def score_lead(data: LeadData):
         "conversion_probability": float(prob),
         "priority_score": float(priority_score),
         "priority_level": priority
+
     }
