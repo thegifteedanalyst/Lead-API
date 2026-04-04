@@ -1,4 +1,4 @@
-## REVENUE & lEAD PRIORITY INTELLIGENT SYSTEM
+## REVENUE & LEAD PRIORITY INTELLIGENT SYSTEM
 
 ## Project Overview
 This project demonstrates the creation of an intelligent lead scoring system using machine learning, 
@@ -75,4 +75,4 @@ HubSpot Updated with:
 
 ## API URL
 
-👉Click or copy the url to the recommendation APIhttps://lead-api-4sqr.onrender.com/docs
+👉Click or copy the url to the recommendation API: https://lead-api-4sqr.onrender.com/docs
